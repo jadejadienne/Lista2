@@ -1,0 +1,25 @@
+def main():
+    
+    Numeros = []
+    
+    for recebe_os_numeros in range(0,5):
+        numero = int(input("digite um numero:  "))
+        Numeros.append(numero)
+        
+
+    lista_de_numeros = Numeros
+   
+    print("lista_de_numeros" , " ".join(map( str,lista_de_numeros)))
+    
+    
+    for receber_um_novo_numero in range(0,1):
+        numero_novo = int(input("digite um novo numero:  "))
+        Numeros.append(numero_novo)
+        
+    nova_lista = Numeros 
+    
+    print("nova_lista", " ".join(map(str,nova_lista)))
+        
+    
+if __name__ == "__main__":
+    main()
