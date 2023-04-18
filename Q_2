@@ -1,0 +1,29 @@
+def main():
+    
+    Nomes = []
+    
+    for receber in range(0, 3):
+        nome = str(input("digite um nome: "))
+        Nomes.append(nome)
+        
+    meus_nomes = Nomes
+    
+    minha_tupla = tuple(meus_nomes)
+    
+    print("minha_tupla: " ," ".join(map(str, minha_tupla)))
+  
+    escolher_nome = input("escolha um dos numeros anteriores: ")
+
+    if escolher_nome in minha_tupla:
+        novo_nome = input("digite um novo nome :")
+        index =  minha_tupla.index(escolher_nome)
+        minha_nova_tupla = minha_tupla[:index] +(novo_nome,) + minha_tupla[index+1:]
+       
+        print("minha nova tupla: ",minha_nova_tupla)
+    else:
+        print("o nome desejado não se encontra na tupla. ")
+
+    
+if __name__ == "__main__":
+    main()
+  
