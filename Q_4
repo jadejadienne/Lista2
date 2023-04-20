@@ -1,0 +1,25 @@
+def main():
+    
+    Numeros = []
+    
+    for recebe_os_numeros in range(0,5):
+        numero = int(input("digite um numero:  "))
+        Numeros.append(numero)
+        
+
+    conjuto_de_numeros = Numeros
+   
+    print("conjunto de numeros: " , " ".join(map( str, conjuto_de_numeros)))
+    
+    Numero_a_remover = int(input("Qual numero vc deseja remover: "))
+    Numeros.remove(Numero_a_remover)
+    
+    
+    print(Numeros)        
+    
+if __name__ == "__main__":
+    main()    
+ 
+   
+    
+
