@@ -15,11 +15,9 @@ def main():
     Numeros.remove(Numero_a_remover)
     
     
-    print(Numeros)        
+    print("Numeros: " , " ".join(map( str, Numeros)))        
     
 if __name__ == "__main__":
-    main()    
+ main()    
  
    
-    
-
