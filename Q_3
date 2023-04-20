@@ -1,0 +1,27 @@
+
+def main():
+    Dicionario = {}
+    
+    chave = str(input("Digite uma chave: "))
+    valor = int(input("Digite um valor: "))
+      
+    Dicionario[chave] = valor
+    
+    print(Dicionario)
+        
+    nova_chave = str(input("Digite uma nova chave: "))
+    novo_valor = int(input("Digite um novo valor: "))
+    
+    
+    Dicionario[nova_chave] = novo_valor
+    
+    print(Dicionario)
+    Dicionario = {}
+    
+    chave =str(input("Digite uma chave"))
+    valor = int(input())
+    
+   
+
+if __name__ == "__main__":
+    main()
