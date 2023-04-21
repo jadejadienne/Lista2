@@ -1,0 +1,14 @@
+def main():   
+    
+    lista_vazia =[]
+    
+    numeros_lista = int(input("digite dez numeros: "))
+ 
+    for adicionar in range(numeros_lista):
+        numeros = int(input("digite um numeros: ")) 
+        lista_vazia.append(numeros)
+        
+    print(" lista_nova: " , " ".join(map( str,  lista_vazia)))
+        
+if __name__ == "__main__":
+    main()
