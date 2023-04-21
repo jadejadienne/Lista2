@@ -1,0 +1,17 @@
+def main():
+    
+    lista_numeros = []
+    
+    for receber in range(5):
+        numero = int(input("digite um numero: "))
+        lista_numeros.append(numero)
+        
+        tupla = tuple(lista_numeros)
+        elemento1 = tupla[0]
+        
+    print("o primeiro elemento da trupa é? " , [str(elemento1)])
+    
+    
+ 
+if __name__ == "__main__":
+   main() 
