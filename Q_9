@@ -1,0 +1,18 @@
+def main():
+    
+
+    numeros = []
+    for receber in range(10):
+        numero = int(input("digite os numeros: "))
+        numeros.append(numero)
+             
+    conjunto = set(numeros)
+    
+    print("conjunto", " ".join(map( str, conjunto)))
+    
+    sem_pares_conjunto = set(filter(lambda x: x % 2 != 0, conjunto))
+    print("conjunto sem números pares:"," ".join(map( str, sem_pares_conjunto)))
+
+    
+if __name__ == "__main__":
+    main()
