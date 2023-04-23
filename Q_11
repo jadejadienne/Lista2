@@ -1,0 +1,16 @@
+def main():   
+    lista_vazia = []
+    
+    for recebe in range(0, 10):
+        numero = int(input("Digite um número: ")) 
+        lista_vazia.append(numero)
+        
+    print("numeros pares: ")
+        
+    for i in range(len(lista_vazia)):
+     if lista_vazia[i] % 2 == 0:
+        
+         print(lista_vazia [i])
+    
+if __name__ == "__main__":
+  main()
