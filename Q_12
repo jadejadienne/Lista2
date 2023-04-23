@@ -1,0 +1,21 @@
+
+def main():
+
+     nomes_lista = []
+     
+     for digite in range(3):
+         nome = input("digite um nome: ")
+         nomes_lista.append(nome)
+         
+         tupla = tuple(nomes_lista)
+       
+     if 'maria' in tupla:
+       print("o nome maria esta na tupla: ")
+       
+     else:
+         print("o nome maria não está na trupa: ")
+     
+ 
+        
+if __name__ == "__main__" :
+      main()
