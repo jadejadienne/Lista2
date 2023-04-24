@@ -1,0 +1,29 @@
+def main():
+    
+    grafo = {}
+    
+    vertices = int(input("Digite o numero de vertice: "))
+    for pecorre in range(vertices): 
+        grafo[str(pecorre)] = []
+        
+    arestas =  int(input("Digite o numero de arestas: "))
+    for pecorre in range(arestas):
+     variavel1 = int(input("digite o primeiro vértice {}: ".format(pecorre + 1)))
+     variavel2 = int(input("digite o segundo vértice {}: ".format(pecorre + 1)))
+     
+     
+     grafo[str (variavel1)].append(variavel2)
+     grafo[str(variavel2)].append(variavel1)
+ 
+     print("grafo", " ".join(map( str, grafo)))
+     
+     for V, A in grafo.items():
+          print("{}: {} ".format(V, A))
+     
+     if 'A'in grafo and 'C' in grafo['A']:
+         print(" ('A', 'C') está presente: ")
+        
+     else:
+         print("('A', 'C') não está presente: ")
+if __name__ == "__main__" :
+      main()
