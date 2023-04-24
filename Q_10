@@ -1,0 +1,30 @@
+def main():
+    
+    grafo = {}
+    
+    vertices = int(input("Digite o numero de vertice: "))
+    for pecorre in range(vertices): 
+        grafo[pecorre] = []
+        
+    arestas =  int(input("Digite o numero de arestas: "))
+    for pecorre in range(arestas):
+     variavel1 = int(input("digite o primeiro vértice {}: ".format(pecorre + 1)))
+     variavel2 = int(input("digite o segundo vértice {}: ".format(pecorre + 1)))
+     
+     
+     grafo[variavel1].append(variavel2)
+     grafo[variavel2].append(variavel1)
+ 
+     print("grafo", " ".join(map( str, grafo)))
+     
+     escolha = input(" qual aresta vc deseja remover:V1, V2: ")
+     escolha = escolha.split(',')
+     V1 = int(escolha[0])
+     V2 = int(escolha[1])
+     
+     grafo[V1].remove(V2)
+     grafo[V2].remove(V1)
+     
+     print("GRAFO", grafo)
+if __name__ == "__main__" :
+      main()
