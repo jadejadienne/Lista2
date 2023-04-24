@@ -1,0 +1,21 @@
+def main():
+    
+    dicionario = {}
+    
+    chave = str(input("Digite uma chave: "))
+    valor = int(input("Digite um valor: "))
+    
+    dicionario[chave] = valor
+    
+    print(dicionario)    
+
+    if 'profissão' in dicionario:
+ 
+        print("profissão esta no dicionario: ")
+        
+    else:
+       print("A chave profissão não foi encontrada no dicionário.")
+       
+    
+if __name__ == "__main__":
+    main()
