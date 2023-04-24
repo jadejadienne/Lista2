@@ -12,7 +12,7 @@ def main():
     
     print("minha_tupla: " ," ".join(map(str, minha_tupla)))
   
-    escolher_nome = input("escolha um dos numeros anteriores: ")
+    escolher_nome = input("escolha um dos nomes anteriores: ")
 
     if escolher_nome in minha_tupla:
         novo_nome = input("digite um novo nome :")
