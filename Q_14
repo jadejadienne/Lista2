@@ -1,0 +1,19 @@
+def main():
+
+    Numeros = set()
+    
+    print("verifique se o numero 3 está presente:  ")
+    
+    for recebe_os_numeros in range(0,5):
+        numero = int(input("digite o {} um numero:  ".format(recebe_os_numeros+1)))
+        Numeros.add(numero)
+        
+    print("conjunto de numeros: " , " ".join(map( str, Numeros)))
+      
+    if 3 in Numeros:
+      print("o numero 3 está no dicionario: ")
+      
+    else:
+        print("o numero 3 não está no dicionario: ")
+if __name__ == "__main__":
+    main()
