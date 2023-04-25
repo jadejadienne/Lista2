@@ -1,0 +1,11 @@
+conjunto = set()
+
+for i in range(0,5):
+    num = int (input("Digite um número: "))
+    conjunto.add(num)
+
+    
+quantElementos = len(conjunto)
+
+print("\nQuantidade de elementos deste conjunto: ", quantElementos)
+
